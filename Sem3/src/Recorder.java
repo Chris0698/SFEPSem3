@@ -32,7 +32,7 @@ public class Recorder {
 	}
 	
 	public void setName(int currentRecordIndex, String name){
-		//currentRecord.setName(name);
+		currentRecord.setName(name);
 	}
 	
 	public void setMark(int mark){
@@ -47,8 +47,8 @@ public class Recorder {
 		int runningTotal = 0;
 		for(int i = 0; i < records.size(); i++){
 			MarkCollection currentStudent = records.get(i);
-			//int currentMark = currentStudent.getMark();
-			//runningTotal += currentMark;
+			int currentMark = currentStudent.getMark();
+			runningTotal += currentMark;
 		}
 		averageMark = runningTotal/records.size();
 	}
