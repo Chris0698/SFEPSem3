@@ -17,14 +17,11 @@ public class RecorderUI extends JFrame implements ActionListener
 	private Scanner scanner = new Scanner(System.in);
 	
 	private Recorder recorder =  new Recorder();
-	
-	public static void main(String [] args)
-	{
-		new RecorderUI();
-	}
+
 	
 	public RecorderUI()
 	{	
+		/*
 		System.out.println("Enter number of students: ");
 		int number = scanner.nextInt();
 		
@@ -33,15 +30,15 @@ public class RecorderUI extends JFrame implements ActionListener
 			System.out.println("Enter name and mark: ");
 			int mark = scanner.nextInt();
 			String name = scanner.next();
-			recorder.getRecord(i);			//would be inside getMark method
+			/*recorder.getRecord(i);			//would be inside getMark method
 			//enterMark(name, mark);
 			
-			recorder.getRecord(i);
+			recorder.getRecord(i); 
 		}
 		
 		
 		getStatistics();
-		/*
+		
 		super("Mark Entering System");
 		makeFrame();
 		showFrame();
@@ -73,21 +70,9 @@ public class RecorderUI extends JFrame implements ActionListener
 		
 		if(o == enterButton)
 		{
-			createClass();
-		}
-		
-	}
-	
-	private void createClass()
-	{
-		recorder = new Recorder();
-		int number = Integer.parseInt(textField.getText());
-		recorder.setSize(number);
-		
-		for(int i =0; i< number; i++)
-		{
 			
 		}
+		
 	}
 	
 	private void enterMark(String name, int mark)
@@ -96,6 +81,11 @@ public class RecorderUI extends JFrame implements ActionListener
 	}
 	
 	private void getStatistics()
+	{
+		
+	}
+	
+	public void display()
 	{
 		
 	}
